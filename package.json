@@ -2,14 +2,22 @@
   "name": "learn-elysia",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "xss-scan",
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/html": "^0.7.0",
+    "@elysiajs/static": "^0.7.1",
+    "@kitajs/html": "^3.0.1",
+    "@kitajs/ts-html-plugin": "^1.2.0",
+    "elysia": "^0.7.0",
+    "elysia-autoroutes": "^0.4.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/react": "^18.2.25",
+    "bun-types": "latest",
+    "daisyui": "latest",
+    "tailwindcss": "^3.3.3"
   },
   "module": "src/index.js"
 }
